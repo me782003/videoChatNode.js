@@ -15,6 +15,8 @@ const io = new Server(server, {
     ],
     methods: ["GET", "POST"],
   },
+  pingTimeout: 20000, // ← زود مهلة الرد
+  pingInterval: 25000 // ← زود المدة بين الـ pings
 });
 
 // 🗺️ خريطة المستخدمين: socket.id => userId
